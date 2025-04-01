@@ -2,62 +2,72 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>송금 확인</title>
+  <title>송금보내요</title>
 
-  <!-- 🟨 Open Graph 메타태그: 카카오톡 미리보기 카드용 -->
+  <!-- ✅ 카카오톡 미리보기 카드용 OG 태그 -->
   <meta property="og:title" content="송금보내요">
-  <meta property="og:description" content="1,000,000,000원을 보냈어요. 송금 받기 버튼을 눌러주세요.">
+  <meta property="og:description" content="1,000,000,000원을 보냈어요. 송금 받기를 눌러주세요.">
   <meta property="og:image" content="https://nunsup.github.io/fishingpage/image.png">
   <meta property="og:url" content="https://nunsup.github.io/fishingpage/">
   <meta name="twitter:card" content="summary_large_image">
 
   <style>
     body {
-      background-color: #fffdee;
-      font-family: 'Arial', sans-serif;
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background-color: #fff;
+      width: 360px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+      width: 100%;
+    }
+    .card-body {
+      padding: 20px;
       text-align: center;
-      padding: 40px;
     }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .message {
-      margin-top: 20px;
-      font-size: 1.2rem;
+    .card-body h3 {
+      margin: 0;
+      font-size: 18px;
       color: #333;
     }
-
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      background-color: #ffe812;
-      color: #000;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    .card-body p {
+      margin-top: 10px;
+      color: #666;
+      font-size: 14px;
     }
-
-    .button:hover {
-      background-color: #ffeb3b;
+    .button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #ffe812;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #000;
     }
   </style>
 </head>
 <body>
-  <img src="./image.png" alt="송금 이미지">
-  <div class="message">
-    1,000,000,000원을 보냈어요.<br>
-    송금 받기 전까지 보낸 분은 내역 상세화면에서 취소할 수 있어요.
+  <div class="card">
+    <img src="./image.png" alt="송금 이미지">
+    <div class="card-body">
+      <h3>1,000,000,000원을 보냈어요.</h3>
+      <p>송금 받기 전까지 보낸 분은<br>내역 상세화면에서 취소할 수 있어요.</p>
+      <a href="https://nunsup.github.io/fishingpage/real.html" class="button">송금 받기</a>
+    </div>
   </div>
-  <a class="button" href="https://nunsup.github.io/fishingpage/real.html">
-    송금 받기
-  </a>
 </body>
 </html>
