@@ -4,47 +4,60 @@
   <meta charset="UTF-8">
   <title>송금 확인</title>
 
-  <!-- ✅ OG 태그 시작 -->
+  <!-- 🟨 Open Graph 메타태그: 카카오톡 미리보기 카드용 -->
   <meta property="og:title" content="송금보내요">
-  <meta property="og:description" content="1,000,000원을 보냈어요. 송금 받기 버튼을 눌러주세요.">
+  <meta property="og:description" content="1,000,000,000원을 보냈어요. 송금 받기 버튼을 눌러주세요.">
   <meta property="og:image" content="https://nunsup.github.io/fishingpage/image.png">
   <meta property="og:url" content="https://nunsup.github.io/fishingpage/">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- ✅ OG 태그 끝 -->
 
   <style>
     body {
-      text-align: center;
-      padding: 50px;
-      font-family: Arial, sans-serif;
       background-color: #fffdee;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 40px;
     }
+
     img {
-      max-width: 90%;
+      max-width: 100%;
       height: auto;
     }
+
     .message {
-      font-size: 1.2em;
       margin-top: 20px;
+      font-size: 1.2rem;
+      color: #333;
     }
+
     .button {
       display: inline-block;
       margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #ffe812;
-      color: #333;
-      border-radius: 10px;
+      padding: 15px 30px;
+      font-size: 1.1rem;
       font-weight: bold;
+      background-color: #ffe812;
+      color: #000;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
       text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .button:hover {
+      background-color: #ffeb3b;
     }
   </style>
 </head>
 <body>
   <img src="./image.png" alt="송금 이미지">
   <div class="message">
-    송금이 완료되었습니다.<br>
-    카카오페이에서 확인해주세요.
+    1,000,000,000원을 보냈어요.<br>
+    송금 받기 전까지 보낸 분은 내역 상세화면에서 취소할 수 있어요.
   </div>
-  <a class="button" href="https://nunsup.github.io/fishingpage/">송금 받기</a>
+  <a class="button" href="https://nunsup.github.io/fishingpage/real.html">
+    송금 받기
+  </a>
 </body>
 </html>
